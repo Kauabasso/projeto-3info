@@ -3,6 +3,14 @@
 {%block conteudo%}
 Página de compras
 
+<h3>Adicionar item</h3>
+<form action="compras_adc.php" method="post">
+<input type="text" name="item" placeholder="Escreva o nome do item">
+
+<input type="submit" value="Adicionar">
+</form>
+
+<h3>Minha lista de compras</h3>
 <ul>
     {% for compra in compras %}
         <li>{{compra.item}}</li>
@@ -10,4 +18,3 @@ Página de compras
 </ul>
 {%endblock%}
 
-drytfuygimjcrvftbugyhnmji6ecr5v7tbynuhjmi
