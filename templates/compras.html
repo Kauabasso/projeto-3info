@@ -13,8 +13,9 @@ Página de compras
 <h3>Minha lista de compras</h3>
 <ul>
     {% for compra in compras %}
-        <li>{{compra.item}}</li>
+    <li>{{compra.item}} - <a href="excluir.php?id={{compra.id}}">excluir</a>-<a href="editar.php?id={{compra.id}}">editar</a></li> 
     {% endfor %}
+   
 </ul>
 {%endblock%}
 
