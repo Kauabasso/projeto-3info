@@ -29,3 +29,7 @@ if(Carbon::now()->isWeekend()){
 else{
     echo 'Aula';
 }
+
+//Calcular diferença entre datas
+$nascimento = Carbon::createFromDate(2010,07,23);
+echo 'Diferença de data:' . Carbon::now()->diff($nascimento);
