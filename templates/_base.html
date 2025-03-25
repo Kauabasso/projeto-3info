@@ -1,22 +1,27 @@
-{#templates/_base.html#}
+{# templates/_base.html #}
+
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Super Twig</title>
+    <title>Dammnn lista de compras</title>
 </head>
+
 <body>
-    <h1>Super site Twig Master</h1>
+    <h1>Twig :)</h1>
+    <p>Site 1000% top.</p>
     {% if titulo %}
     <h2>{{titulo}}</h2>
-    {%endif%}
+    {% endif %}
     <hr>
     <a href="index.php">Inicial</a> |
     <a href="compras.php">Compras</a>
     <hr>
-    
 
     {% block conteudo %}{% endblock %}
+
 </body>
+
 </html>
