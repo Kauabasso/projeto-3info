@@ -33,3 +33,6 @@ else{
 //Calcular diferença entre datas
 $nascimento = Carbon::createFromDate(2010,07,23);
 echo 'Diferença de data:' . Carbon::now()->diff($nascimento);
+
+$data_aleatoria='2023-04-09';
+$data = Carbon::parse($data_aleatoria);
