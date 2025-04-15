@@ -1,0 +1,17 @@
+{%extends "_base.html" %}
+
+<form method="POST" action="login.php">
+    <h2>Entrar no sistema</h2>
+
+
+    <input type="text" name="usuario" placeholder="Usuário" required>
+    <input type="password" name="senha" placeholder="Senha" required>
+
+
+    <button type="submit">Entrar</button>
+
+
+    {% if erro %}
+        <div class="erro">{{ erro }}</div>
+    {% endif %}
+</form>
